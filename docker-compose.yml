@@ -27,6 +27,8 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
+      args:
+        VITE_API_URL: http://backend_node:3000
     container_name: frontend_nginx
     restart: always
     ports:

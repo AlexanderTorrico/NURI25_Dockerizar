@@ -1,3 +1,5 @@
+use z_users;
+
 CREATE TABLE IF NOT EXISTS users (
   id INT AUTO_INCREMENT PRIMARY KEY,
   nombre VARCHAR(100),
